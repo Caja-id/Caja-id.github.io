@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NOVA Space</title>
+
+    <style>
+      @font-face{
+        font-family: 'nova';
+        src: url('Phase-BGX_44-80-33.ttf');
+      }
+      
+
+      html, body{
+        margin: 0;
+        height: 100%;
+        font-family: 'nova';
+        font-size: 28px
+      }
+      body{
+        background:black ;
+        color: white;   
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .hidden {
+        height: 0;
+        transition: 2s height;
+        overflow: hidden;
+        border: 1px solid gold;
+      }
+      .visible{
+        height: calc(50vh);
+        overflow: scroll;
+      }
+
+
+      .newspaper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 6px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .newspaper {
+          display: inherit;
+        }
+      }
+
+      #start {
+        z-index: 2;
+        color: transparent;
+        font-size: 30vw;
+        text-align: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        -webkit-text-stroke: 1px gold;
+      }
+     
+     /*  #blob{
+        img data-src="blob.png"
+      } 
+      */ 
+
+      #about{
+        width: 100%;
+        height: 100%;
+        background: white;
+        position: fixed;
+        z-index: 1;
+        padding: 12px;
+      }
+
+      .project {
+        z-index: 2;
+        font-size: 25px;     
+        cursor: pointer;
+      }
+
+      .project_item{
+        margin-bottom: 150px
+      }      
+     
+      .project_title{
+        cursor:pointer;
+        border: 0.3px solid gold;
+      }
+
+
+     /* section img {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width:  100px;
+        height:  100px;
+        z-index: -2;
+        opacity: 0;
+        object-fit: cover;
+      }
+      
+      .project_itemmmm div:hover img {
+        display: block;
+        cursor: pointer;
+        opacity: 1;
+        position: fixed;
+        opacity: 1;
+        width: 100vw;
+        height: 100%;
+      }*/
+      .project_itemmmm div{
+        width:  100px;
+        height:  500px;
+      }
+
+      .project_itemmmm {
+        height: 150px;
+        display: flex;	
+        justify-content: space-between;
+        overflow: hidden;
+      }
+
+      .project_itemmmm div{
+        flex-grow: 1;
+        display: block;
+      }
+      .project_itemmmm img{
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <span id="start">NOVA</span>
+
+  <section>
+
+    <div class="project_item">
+      <div class="project_title">
+        walking weimar
+      </div>
+      <div class="hidden">
+        <div class="newspaper"> 
+          <div class="newspaper_item">
+            walking and writing as curatorial practice and artistic strategy </br></br>
+            a curatorial project on paper and a handbook for a fictional exhibition in public space </br></br>
+          </div> 
+          <div class="newspaper_item">
+            summer/fall 2020  <br> <br> 
+          </div>            
+        </div> 
+        <form>
+          <a href="ww.pdf">
+          >>> PDF <<<
+          </a>
+        </form>  
+      </div>
+      <div class="project_itemmmm">
+        <div>
+          <img data-src="walking_weimar_announcement.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="project_item">
+      <div class="project_title">
+        young and pretty 
+      </div>
+      <div class="hidden">
+        <div class="newspaper"> 
+          <div class="newspaper_item">
+            opens jan 14, 7-10 pm <br> 
+            opening hours january 15 – 24 2020: 5-7 pm <br> 
+            berkaer str. 11, 99423 weimar
+          </div> 
+          <div class="newspaper_item">
+            die traurigsten cheerleader der welt <br> 
+            by fanny josephine dehnkamp, teresa fischer, alexandra kahl, luis kürschner and dimitrios vellis <br><br>   
+          </div> 
+          <form>
+            <a href="downloads/pressrelease.pdf">
+            >>> PDF <<<
+            </a>
+          </form>           
+        </div>  
+      </div> 
+
+      <div class="project_itemmmm"></div>
+    </div>
+
+
+    <div class="project_item">
+      <div class="project_title">
+        parallel screens
+      </div>
+      <div class="hidden">
+        <div class="newspaper"> 
+          <div class="newspaper_item">
+            opening november 12, 2019 : 8-10 pm <br> 
+            berkaer str. 11, 99423 weimar
+          </div> 
+          <div class="newspaper_item">
+            by carla chaim, luis urculo, tina wilke, meredith sward, pablo-martín córdoba, jessica findley, mercedes lozano, allison beda, randi renate, justin mchugh, chong yan chuah, simon isaac, johanna keimeyer, mari nagem, nick lesley, flavia d’urso, lissa corona, capt. james, zoya, sardashti, alexander isaenko, allison beaudry, liss lafleur, jonas brinker and esben holk <br> 
+            curated by brunno silva <br> 
+            photos by jannis uffrecht   
+          </div>            
+        </div>  
+      </div> 
+      <div class="project_itemmmm">
+        <div>
+        <img data-src="img_3131.jpg"/></div><div>
+        <img data-src="img_3136.jpg"/></div><div>
+        <img data-src="img_3144.jpg"/></div><div>
+        <img data-src="img_3148.jpg"/></div><div>
+        <img data-src="img_3151.jpg"/></div><div>
+        <img data-src="img_3154.jpg"/></div>
+      </div>  
+    </div>
+
+         
+
+
+    <div class="project_item">
+      <div class="project_title">
+        nomansland
+      </div>
+      <div class="hidden">
+        <div class="newspaper"> 
+          <div class="newspaper_item">
+            july 12-14 2019 <br> 
+            opening july 11, 7–10 pm <br> 
+            opening hours: <br>  
+            july 12, 12–8 pm <br> 
+            july 13, 12–8 pm <br> 
+            july 14, 12–6 pm <br> 
+            berkaer str. 11, 99423 weimar
+          </div> 
+          <div class="newspaper_item">
+            by anne heilmann, masami saito and kathy schubert  
+          </div>            
+        </div>  
+      </div> 
+      <div class="project_itemmmm">
+        <div>
+          <img data-src="nomansland_flyer.jpg" />
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="project_item">
+      <div class="project_title">
+        major confidence
+      </div>
+      <div class="hidden">
+        <div class="newspaper"> 
+          <div class="newspaper_item">
+            may 21-26 2019 </br> 
+            opening may 21, 7–10 pm </br> 
+            opening hours may 22–26: 12–6 pm </br> 
+            berkaer str. 11, 99423 weimar </br> <br> <br>  
+          </div> 
+          <div class="newspaper_item">
+            by taissa fromme and max broda </br>  
+            text by jasmine G. wenzel  </br> 
+            photos by jannis uffrecht </br> 
+          </div>             
+        </div> 
+        <form>
+          <div>
+            <a href="mc.pdf">
+            >>> PDF <<<
+            </a>
+          </div>
+        </form>  
+      </div>
+      <div class="project_itemmmm">
+        <div>
+          <img data-src="majorconfidence_exhibitionview_23.jpg" /></div><div>
+          <img data-src="majorconfidence_exhibitionview_15.jpg" /></div><div>
+          <img data-src="majorconfidence_exhibitionview_29.jpg" /></div><div>
+          <img data-src="majorconfidence_exhibitionview_35.jpg" /></div><div>
+          <img data-src="majorconfidence_exhibitionview_46.jpg" /></div><div>
+          <img data-src="majorconfidence_exhibitionview_53.jpg" /></div>
+        
+    </div> 
+    </div> 
+
+    <div class="project_item">
+      <div class="project_title">
+        about
+      </div>
+      <div class="hidden">
+        <div class="newspaper"> 
+          <div class="newspaper_item">
+            NOVA is a mobile space for contemporary art and a platform for
+            current questions of artistic practice and its (re)presentation.</br> 
+            in exhibitions as well as other experimental formats, NOVA is dedicated to
+            the discourse around the arts. </br> 
+              
+          </div> 
+          <div class="newspaper_item">
+            it combines academic teaching with hands-on projects ranging from artistic to
+            curatorial practice, exhibition management to architecture and
+            communications – all within the context of a locally as well as globally
+            oriented art field.
+          </div>            
+        </div> 
+        <form>
+          <div>
+            <a href="https://www.instagram.com/nova_artspace/" target="_blank"> </br> >>>insta<<< </a>
+        </form>
+        <form>
+          <a href="mailto:hello@nova-space.org"> </br> >>>mail<<< </a>    
+        </form>
+      </div>
+    </div>
+  </div>
+
+    
+
+  </section>
+  </body>
+</html>
+
+<script>
+
+var projects = document.getElementsByClassName("project_item")
+//console.log(projects);
+Array.prototype.forEach.call(projects, function(el) {
+    el.onclick = function(i, e){
+      var hidden_element = this.querySelector('.hidden');
+      console.log(hidden_element);
+      hidden_element.classList.toggle('visible')
+    }
+});
+
+var start = document.getElementById('start');
+start.addEventListener ("click", function(){
+  this.style.display = 'none'
+});
+
+
+var images = document.querySelectorAll('img');
+var body = document.body;
+var i;
+for (i = 0; i < images.length; i++) {
+
+  var image = images[i];
+  
+  console.log(image)
+  image.addEventListener('mouseenter', function(e){
+    var url = this.getAttribute("data-src");
+    console.log(url)
+    body.style.backgroundImage = "url(" + url + ")"
+  });
+  image.addEventListener('mouseleave', function(){
+    body.style.backgroundImage = "none"
+  });
+
+}
+
+
+/* 
+var blob = document.getElementById("blob");  
+var start = document.getElementById('start');
+start.addEventListener('click',hideAndShow);
+function hideAndShow(){
+  about.classList.toggle('hidden')
+} 
+*/
+
+
+</script>
+
